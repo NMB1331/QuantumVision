@@ -21,6 +21,7 @@ IMAGE_WIDTH = 425
 
 # Function that parses the region_shape_attribute JSON to get the coordinates of the bottom left, top right corner
 # The neural network will ultimately predict [x, y, width, height]
+# TODO: Instead need width, height, and center of box
 def getLabelsFromJSONStr(region_shape_attribute_list):
     label_list = []
     for label_json in region_shape_attribute_list:
